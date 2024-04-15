@@ -5,3 +5,5 @@ Client tom = new Client(); // вызываем конструктор по ум�
 
 bily.Print();
 tom.Print();
+
+Console.WriteLine();
