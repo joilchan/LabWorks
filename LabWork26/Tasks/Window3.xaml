@@ -19,7 +19,7 @@
 
         <StackPanel Grid.ColumnSpan="3" Orientation="Horizontal">
             <Label Content="Поиск"/>
-            <TextBox/>
+            <TextBox Width="300"/>
         </StackPanel>
 
         <TreeView Grid.Row="1" Grid.Column="0"/>

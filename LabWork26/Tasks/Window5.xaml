@@ -15,17 +15,17 @@
             <Button Name="Task5Button" Background="AntiqueWhite" Content="Задание 5" Width="200" Click="Task5Button_Click"/>
         </WrapPanel>
         <Canvas Background="SaddleBrown" DockPanel.Dock="Bottom" Height="70">
-            <Image Source="D:\myRepos\LabWorks\LabWork26\1.png" Canvas.Right="30" Canvas.Top="5" Width="27"/>
-            <Image Source="D:\myRepos\LabWorks\LabWork26\2.png" Canvas.Right="30" Canvas.Bottom="5" Width="27"/>
-            <Image Source="D:\myRepos\LabWorks\LabWork26\3.png" Canvas.Left="30" Canvas.Top="5" Width="27"/>
-            <Image Source="D:\myRepos\LabWorks\LabWork26\4.png" Canvas.Left="30" Canvas.Bottom="5" Width="27"/>
+            <Image Source="/1.png" Canvas.Right="30" Canvas.Top="5" Width="27" Stretch="Uniform" MinHeight="2" MinWidth="2"/>
+            <Image Source="/2.png" Canvas.Right="30" Canvas.Bottom="5" Width="27"/>
+            <Image Source="/3.png" Canvas.Left="30" Canvas.Top="5" Width="27"/>
+            <Image Source="/4.png" Canvas.Left="30" Canvas.Bottom="5" Width="27"/>
         </Canvas>
         <Label Content="Меню" Background="BurlyWood" DockPanel.Dock="Left"/>
         <Canvas Background="Bisque">
-            <Image Source="D:\myRepos\LabWorks\LabWork26\cake1.jpg" Canvas.Right="30" Canvas.Top="5" Width="230"/>
-            <Image Source="D:\myRepos\LabWorks\LabWork26\cake2.jpg" Canvas.Right="30" Canvas.Bottom="5" Width="230"/>
-            <Image Source="D:\myRepos\LabWorks\LabWork26\cake3.jpg" Canvas.Left="30" Canvas.Top="5" Width="230"/>
-            <Image Source="D:\myRepos\LabWorks\LabWork26\cake4.jpg" Canvas.Left="30" Canvas.Bottom="5" Width="230"/>
+            <Image Source="/cake1.jpg" Canvas.Right="30" Canvas.Top="5" Width="230"/>
+            <Image Source="/cake2.jpg" Canvas.Right="30" Canvas.Bottom="5" Width="230"/>
+            <Image Source="/cake3.jpg" Canvas.Left="30" Canvas.Top="5" Width="230"/>
+            <Image Source="/cake4.jpg" Canvas.Left="30" Canvas.Bottom="5" Width="230"/>
         </Canvas>
     </DockPanel>
 </Window>
