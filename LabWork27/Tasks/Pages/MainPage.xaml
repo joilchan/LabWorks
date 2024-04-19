@@ -19,7 +19,7 @@
                 Width="100" Click="AuthorizationButton_Click"/>
         <Button x:Name="RegistrationButton" Content="Регистрация"
                 Grid.Row="1" Width="100" Click="RegistrationButton_Click"/>
-        <Button x:Name="OptionButton" Content="Настройка"
+        <Button x:Name="OptionButton" Content="Настройки"
                 Grid.Row="2" Width="100" Click="OptionButton_Click"/>
     </Grid>
 </Page>
