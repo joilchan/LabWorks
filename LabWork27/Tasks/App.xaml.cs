@@ -13,5 +13,6 @@ namespace Tasks
     /// </summary>
     public partial class App : Application
     {
+
     }
 }

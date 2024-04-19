@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Tasks.Pages;
 
 namespace Tasks
 {
@@ -23,6 +24,24 @@ namespace Tasks
         public MainWindow()
         {
             InitializeComponent();
+
+            Manager.MainFrame = ContentFrame;
+            Manager.MainFrame.Navigate(new MainPage());
+
+            ContentFrame.Navigate(new Pages.MainPage());
+        }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.GoBack();
+        }
+
+        private void ContentFrame_ContentRendered(object sender, EventArgs e)
+        {
+            if (ContentFrame.CanGoBack)
+                BackButton.IsEnabled = true;
+            else
+                BackButton.IsEnabled = false;
         }
     }
 }

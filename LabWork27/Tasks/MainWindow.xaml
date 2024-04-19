@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tasks"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="{Binding ElementName=ContentFrame, Path=Content.Title}" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <Border Background="Bisque"/>
+        <Image Source="/joil.png"/>
+        <Button x:Name="BackButton" Content="Назад" 
+                Click="BackButton_Click" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Frame x:Name="ContentFrame" Grid.Row="1" 
+               NavigationUIVisibility="Hidden" ContentRendered="ContentFrame_ContentRendered"/>
+        <Label Content="Подвал" Grid.Row="2"/>
     </Grid>
 </Window>
