@@ -32,28 +32,37 @@
                 
             <TabItem Header="Настройки2" Height="22" Margin="-2,-2,-2,0" VerticalAlignment="Top">
                 <StackPanel>
-                    <Border Background="DarkGray">
-                        <Expander Header="О программе">
-                            <ListBox>
-                                <Label Content="Данная программа была создана 19.04.24 дома у Лизунова Григория Константиновича им же самим в целях получить за неё зачёт)"/>
-                                <Image Source="/Pages/joil.png" Width="200" HorizontalAlignment="Left"/>
-                            </ListBox>
-                        </Expander>
-                    </Border>
-
-                    <Expander Header="Цветовая тема" Background="#FFE5E5E5">
-                        <CheckBox Content="Светлая/Тёмная тема" HorizontalAlignment="Left"/>
+                    <Expander Header="О программе">
+                            <Border Background="LightPink">
+                                <StackPanel>
+                                    <Label Content="Данная программа была создана 19.04.24 дома у Лизунова Григория Константиновича им же самим в целях получить за неё зачёт)"/>
+                                    <Image Source="/Pages/joil.png" Width="130" HorizontalAlignment="Left"/>
+                                </StackPanel>                    
+                            </Border>
                     </Expander>
 
-                    <Border Background="LightGray">
-                        <Expander Header="Размер текста">
-                            <ListBox>
+                    <Expander Header="Цветовая тема" Background="#FFE5E5E5">
+                        <Border Background="LightPink">
+                            <CheckBox Content="Светлая/Тёмная тема" HorizontalAlignment="Left"/>
+                        </Border>
+                    </Expander>
+
+
+                    <Expander Header="Размер текста">
+                        <Border Background="LightPink" >
+                            <StackPanel HorizontalAlignment="Left">
                                 <CheckBox Content="Мелкий" Width="100"/>
                                 <CheckBox Content="Средний" Width="100"/>
                                 <CheckBox Content="Большой" Width="100"/>
-                            </ListBox>
-                        </Expander>
-                    </Border>
+                            </StackPanel>
+                        </Border>
+                    </Expander>
+                </StackPanel>
+            </TabItem>
+
+            <TabItem>
+                <StackPanel>
+                    <Expander/>
                 </StackPanel>
             </TabItem>
         </TabControl>

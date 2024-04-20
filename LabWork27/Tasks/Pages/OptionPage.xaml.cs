@@ -23,6 +23,8 @@ namespace Tasks.Pages
         public OptionPage()
         {
             InitializeComponent();
+
+            
         }
     }
 }

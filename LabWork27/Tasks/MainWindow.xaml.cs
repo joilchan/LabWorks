@@ -29,6 +29,10 @@ namespace Tasks
             Manager.MainFrame.Navigate(new MainPage());
 
             ContentFrame.Navigate(new Pages.MainPage());
+
+            var imagePath = new Uri(@"/joil.png", UriKind.Relative);
+            var bitmapImage = new BitmapImage(imagePath);
+            image1.Source = bitmapImage;
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)

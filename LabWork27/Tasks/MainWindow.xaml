@@ -13,12 +13,12 @@
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
 
-        <Border Background="Bisque"/>
-        <Image Source="/joil.png" HorizontalAlignment="Left"/>
+        <Border BorderBrush="Gray" BorderThickness="5" Background="Bisque"/>
+        <Border BorderBrush="Gray" BorderThickness="5" Background="Bisque" Grid.Row="2"/>
+        <Image x:Name="image1" HorizontalAlignment="Left"/>
         <Button x:Name="BackButton" Content="Назад" 
-                Click="BackButton_Click" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                Click="BackButton_Click" VerticalAlignment="Center" HorizontalAlignment="Right"/>
         <Frame x:Name="ContentFrame" Grid.Row="1" 
                NavigationUIVisibility="Hidden" ContentRendered="ContentFrame_ContentRendered"/>
-        <Label Content="Подвал" Grid.Row="2"/>
     </Grid>
 </Window>
