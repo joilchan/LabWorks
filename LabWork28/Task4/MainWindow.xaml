@@ -1,12 +1,12 @@
-﻿<Window x:Class="Tasks.MainWindow"
+﻿<Window x:Class="Task4.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Tasks"
+        xmlns:local="clr-namespace:Task4"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Margin="240 150">
+    <Grid Margin="140 150">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.5*"/>
             <ColumnDefinition/>
@@ -17,18 +17,18 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <Label FontFamily="./Fonts/#Press Start 2P" Content="login"/>
-        <Label FontFamily="./Fonts/#Press Start 2P" Content="password" Grid.Row="1" />
+        <Label Style="{StaticResource LabelStyle}" Content="login"/>
+        <Label Content="password" Grid.Row="1" Style="{StaticResource LabelStyle}"/>
 
-        <TextBox Grid.Column="1"/>
-        <TextBox Grid.Column="1" Grid.Row="1"/>
+        <TextBox Grid.Column="1" Style="{StaticResource TextBoxStyle}"/>
+        <TextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource TextBoxStyle}"/>
 
         <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal">
-            <Button Content="Ok"/>
-            <Button Content="Cancel"/>
+            <Button Content="Ok" Style="{StaticResource ButtonStyle}"/>
+            <Button Content="Cancel" Style="{StaticResource {x:Type Control}}"/>
         </StackPanel>
 
-        <Image HorizontalAlignment="Left" VerticalAlignment="Center" Source="/beach.jpg" Grid.Row="2"/>
-        
+        <Image HorizontalAlignment="Left" VerticalAlignment="Center" Source="/Images/joilkey.png" Grid.Row="2"/>
+
     </Grid>
 </Window>
