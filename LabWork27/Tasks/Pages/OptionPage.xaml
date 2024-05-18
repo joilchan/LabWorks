@@ -62,7 +62,7 @@
 
             <TabItem>
                 <StackPanel>
-                    <Expander/>
+                    
                 </StackPanel>
             </TabItem>
         </TabControl>

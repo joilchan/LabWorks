@@ -24,7 +24,15 @@ namespace Tasks.Pages
         {
             InitializeComponent();
 
-            
+            //StackPanel panel = new StackPanel();
+            //Expander expander = new Expander();
+
+            //for (int i = 0; i <= 10; i++)
+            //{
+            //    var label = new Label();
+            //    label.Content = $"";
+
+            //}
         }
     }
 }
