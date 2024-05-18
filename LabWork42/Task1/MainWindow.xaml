@@ -1,0 +1,38 @@
+﻿<Window x:Class="Task1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="465" Width="800">
+    <StackPanel Background="#FFE0E0E0">
+        <WrapPanel>
+            <Button x:Name="OpenFileButton" Content="Открыть файл" Width="100" HorizontalAlignment="Left" Click="OpenFileButton_Click" Background="#FFB1B1B1"/>
+            <Menu Background="#FFB1B1B1">
+                <MenuItem Header="Размер пера" Width="100">
+                    <MenuItem x:Name="BrushSizeTen" Header="10" Click="BrushSizeTen_Click"/>
+                    <MenuItem x:Name="BrushSizeTwenty" Header="20" Click="BrushSizeTwenty_Click"/>
+                    <MenuItem x:Name="BrushSizeThirty" Header="30" Click="BrushSizeThirty_Click"/>
+                    <MenuItem x:Name="BrushSizeFourty" Header="40" Click="BrushSizeFourty_Click"/>
+                </MenuItem>
+            </Menu>
+        </WrapPanel>
+        <Border BorderBrush="Gray" BorderThickness="1">
+            <InkCanvas x:Name="canvas" Height="380">
+                <Image x:Name="image"/>
+            </InkCanvas>
+        </Border>
+        <WrapPanel HorizontalAlignment="Center">
+            <Button x:Name="BlackColorButton" Background="Black" Width="20" Height="20" Click="BlackColorButton_Click"/>
+            <Button x:Name="RedColorButton" Background="Red" Width="20" Height="20" Click="RedColorButton_Click"/>
+            <Button x:Name="OrangeColorButton" Background="Orange" Width="20" Height="20" Click="OrangeColorButton_Click"/>
+            <Button x:Name="YellowColorButton" Background="Yellow" Width="20" Height="20" Click="YellowColorButton_Click"/>
+            <Button x:Name="GreenColorButton" Background="Green" Width="20" Height="20" Click="GreenColorButton_Click"/>
+            <Button x:Name="LightBlueColorButton" Background="LightBlue" Width="20" Height="20" Click="LightBlueColorButton_Click"/>
+            <Button x:Name="BlueColorButton" Background="Blue" Width="20" Height="20" Click="BlueColorButton_Click"/>
+            <Button x:Name="PurpleColorButton" Background="Purple" Width="20" Height="20" Click="PurpleColorButton_Click"/>
+            <Button x:Name="WhiteColorButton" Background="White" Width="20" Height="20" Click="WhiteColorButton_Click"/>
+        </WrapPanel>
+    </StackPanel>
+</Window>
