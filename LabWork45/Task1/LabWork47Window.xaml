@@ -1,0 +1,45 @@
+﻿<Window x:Class="Task1.LabWork47Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task1"
+        mc:Ignorable="d"
+        Title="LabWork47Window" Height="600" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel>
+            <Label Content="Task1"/>
+            <Label Content="Введите цену книги"/>
+            <TextBox x:Name="userPriceTextBox"/>
+            <Button x:Name="bookPriceButton" Content="Найти книги ниже введенной суммы" Click="bookPriceButton_Click"/>
+            <Label x:Name="bookPriceLabel" Content="..."/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="2">
+            <Label Content="Task2"/>
+            <Label Content="Введите комманду на вставку данных"/>
+            <TextBox x:Name="InsertCommandTextBox"/>
+            <Button x:Name="InsertCommandButton" Content="Добавить запись" Click="InsertCommandButton_Click"/>
+            <Label x:Name="gameIdLabel"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1">
+            <Label Content="Task3"/>
+            <Label Content="Введите жанр"/>
+            <TextBox x:Name="GenreTextBox"/>
+            <Label Content="Введите цену"/>
+            <TextBox x:Name="PriceTextBox"/>
+            <Button x:Name="ShowContentButton" Content="Показать результат" Click="ShowContentButton_Click"/>
+            <DataGrid x:Name="BookDataGrid" Height="Auto"/>
+        </StackPanel>
+    </Grid>
+</Window>

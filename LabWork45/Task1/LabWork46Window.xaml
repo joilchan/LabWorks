@@ -1,0 +1,36 @@
+﻿<Window x:Class="Tasks_45.LabWork46Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tasks_45"
+        mc:Ignorable="d"
+        Title="LabWork46Window" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel>
+            <Label Content="Task1"/>
+            <TextBox x:Name="ChangedRowsTextBox"/>
+            <Button Content="Выполнить" x:Name="ChangeRowsButton" Click="ChangeRowsButton_Click"/>
+            <Label Content=".." x:Name="ChangedRowsLabel"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1">
+            <Label Content="Task2"/>
+            <Label Content="ID книги:"/>
+            <TextBox x:Name="IdTextBox"/>
+            <Label Content="Цена:"/>
+            <TextBox x:Name="PriceTextBox"/>
+            <Button Content="Выполнить" x:Name="ChangePriceButton" Click="ChangePriceButton_Click"/>
+            <Label x:Name="ResultLabel" Content=".."/>
+        </StackPanel>
+    </Grid>
+</Window>

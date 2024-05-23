@@ -1,0 +1,52 @@
+﻿<Window x:Class="Task1.LabWork48Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task1"
+        mc:Ignorable="d"
+        Title="LabWork48Window" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel>
+            <Label Content="Task2. Добавление автора в таблицу"/>
+            <Label Content="Введите фамилию автора"/>
+            <TextBox x:Name="surnameTextBox"/>
+            <Label Content="Введите имя автора"/>
+            <TextBox x:Name="nameTextBox"/>
+            <Label Content="Введите страну автора"/>
+            <TextBox x:Name="countryTextBox"/>
+            <Button x:Name="AddAuthorButton" Content="Добавить автора" Click="AddAuthorButton_Click"/>
+        </StackPanel>
+        
+        <DataGrid x:Name="TablesGrid" Grid.Row="1"></DataGrid>
+
+        <StackPanel Grid.Column="1">
+            <Label Content="Task3. Добавление автора в таблицу c выводом ID"/>
+            <Label Content="Введите фамилию автора"/>
+            <TextBox x:Name="surnameTextBox1"/>
+            <Label Content="Введите имя автора"/>
+            <TextBox x:Name="nameTextBox1"/>
+            <Label Content="Введите страну автора"/>
+            <TextBox x:Name="countryTextBox1"/>
+            <Button x:Name="AddAuthorButton1" Content="Добавить автора" Click="AddAuthorButton1_Click"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <Label Content="Task4. Вывод таблицы Book в диапазоне введенных цен"/>
+            <Label Content="Введите начальную цену"/>
+            <TextBox x:Name="initialPriceTextBox"/>
+            <Label Content="Введите конечную цену"/>
+            <TextBox x:Name="endPriceTextBox"/>
+            <Button x:Name="GetBookListButton" Content="Вывести таблицу книг" Click="GetBookListButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

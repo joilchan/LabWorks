@@ -6,7 +6,20 @@
         xmlns:local="clr-namespace:Task2"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <StackPanel>
+        <MediaElement x:Name="boardPlayer" Height="340"/>
+        <Button x:Name="OpenButton" Content="Запустить" Width="100" Click="OpenButton_Click">
+            <!--<Button.Triggers>
+                <EventTrigger RoutedEvent="Button.Click">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <MediaTimeline Source="video\game intro.mp4" Storyboard.TargetName="boardPlayer"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+            </Button.Triggers>-->
+        </Button>
+    </StackPanel>
 </Window>

@@ -1,0 +1,60 @@
+﻿<Window x:Class="Task1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task1"
+        mc:Ignorable="d"
+        Title="LabWork45" Height="500" Width="680">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel Grid.ColumnSpan="3">
+            <Label Content="task 1"/>
+            <Label x:Name="ConnectionLabel" Content="..." />
+        </StackPanel>
+        
+        <StackPanel Grid.Row="1">
+            <Label Content="task 2"/>
+            <Label Content="Введите команду"/>
+            <TextBox x:Name="CommandTextBox" HorizontalAlignment="Left" Width="260"/>
+            <Button x:Name="GetValueButton" Content="Выполнить" HorizontalAlignment="Left" Click="GetValueButton_Click" Width="260"/>
+            <Label x:Name="ExcuteCommandLabel" HorizontalAlignment="Left" Width="260"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <Label Content="task 3"/>
+            <Label Content="Введите команду"/>
+            <TextBox x:Name="CommandTextBox2" HorizontalAlignment="Left" Width="260"/>
+            <Button x:Name="GetTableButton" Content="Выполнить" HorizontalAlignment="Left" Click="GetTableButton_Click" Width="260"/>
+            <Label x:Name="ResultLabel" HorizontalAlignment="Left" Width="260"/>
+            <DataGrid x:Name="TableGrid" MinHeight="100"></DataGrid>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2">
+            <Label Content="task 4"/>
+            <DataGrid x:Name="BookListGrid" MinHeight="100"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="2" VerticalAlignment="Center">
+            <Button x:Name="LabWork46Button" Click="LabWork46Button_Click"
+                    Width="100" Height="40"
+                    Content="LabWork46"/>
+            <Button x:Name="LabWork47Button" Click="LabWork47Button_Click"
+                    Width="100" Height="40"
+                    Content="LabWork47"/>
+            <Button x:Name="LabWork48Button" Click="LabWork48Button_Click"
+                    Width="100" Height="40"
+                    Content="LabWork48"/>
+        </StackPanel>
+        
+    </Grid>
+</Window>
