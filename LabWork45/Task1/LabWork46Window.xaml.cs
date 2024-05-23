@@ -41,5 +41,18 @@ namespace Tasks_45
                 MessageBox.Show($"Ошибка: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
+        private void tableButton_Click(object sender, RoutedEventArgs e)
+        {
+            string table = tableTextBox.Text;
+            try
+            {
+                tableDataGrid.ItemsSource = DataAccessLayer.GetDataTable(table).DefaultView;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
     }
 }

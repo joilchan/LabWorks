@@ -93,15 +93,17 @@ namespace Task1
             return (command.ExecuteNonQuery() > 0);
         }
 
-        //public static DataTable GetDataTable(string table) 
-        //{
-        //    using SqlConnection connection = new(ConnectionString);
-        //    connection.Open();
+        public static DataTable GetDataTable(string table)
+        {
+            using SqlConnection connection = new(ConnectionString);
+            connection.Open();
 
-        //    string query = $"SELECT * FROM {table}";
-        //    SqlCommand command = new(query, connection);
-        //    return;
-        //}
+            string query = $"SELECT * FROM {table}";
+            using SqlDataAdapter adapter = new(query, connection);
+            DataTable dataTable = new();
+            adapter.Fill(dataTable);
+            return dataTable;
+        }
 
         //lab47
         public static int GetBookPrice(int price)
