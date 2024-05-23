@@ -27,7 +27,15 @@ namespace Tasks_45
 
         private void ChangeRowsButton_Click(object sender, RoutedEventArgs e)
         {
-            ChangedRowsLabel.Content = DataAccessLayer.ChangeTable(ChangedRowsTextBox.Text).ToString();
+            try
+            {
+                ChangedRowsLabel.Content = DataAccessLayer.ChangeTable(ChangedRowsTextBox.Text).ToString();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show($"Ошибка: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+
         }
 
         private void ChangePriceButton_Click(object sender, RoutedEventArgs e)

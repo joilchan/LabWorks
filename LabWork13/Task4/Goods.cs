@@ -14,8 +14,8 @@ namespace Task4
         public DateTime ExpirationDate { get; set; }
 
         public override string ToString()
-            => ($" Название: {String.Format("{0}{1}", Name[..1].ToUpper(), Name[1..])}\n" +
-                $" Цена: {String.Format("{0:C}", Price)} \n" +
-                $" Срок годности: {String.Format("{0:yyyy dd mm}", ExpirationDate)}");
+            => $"Название: {Name[..1].ToUpper()}{Name[1..]}\n" +
+               $"Цена: {Price:C} \n" +
+               $"Срок годности: {ExpirationDate:yyyy dd mm}";
     }
 }

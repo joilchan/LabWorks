@@ -14,7 +14,7 @@ namespace Task4
 
         public override string ToString()
             => $" ФИО: {Name.ToUpper()}\n" +
-               $" Полис: {String.Format("{0:000000000}", Policy)}\n" +
-               $" Срок годности: {String.Format("{0:yyyy dd mm}", BirthDate)}";
+               $" Полис: {Policy:000000000}\n" +
+               $" Срок годности: {BirthDate:yyyy dd mm}";
     }
 }
